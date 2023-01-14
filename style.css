@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* -------------
+   Header part start
+---------------- */
+.header-area{
+    width: 1440px;
+    height: 1320px;
+    left: 0px;
+    top: 0px;
+    background: rgba(255, 144, 14, 0.1);
+}
+.navbar {
+    padding: 0 25px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+
+     
+  }
+
+  .navbar h1{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+
+  }
+  
+  nav > ul {
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-weight: 500;
+    font-size: 18px;
+
+  }
+  /* -------------------
+        Header Title
+   --------------------- */
+  
+  .header-title{
+    font-family: 'Work Sans';
+    font-style: normal;
+    position: absolute;
+    width: 700px;
+    height: 225px;
+    left: 350px;
+    top: 220px;
+    color: #131313;
+  }
+  .header-title h1{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+  }
+  .header-title p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 26px;
+    color: #727272;
+
+  }
+ .header-area button{
+    position: absolute;
+    border-radius: 8px;
+    background-color:  #FF900E;
+    border: none;
+    width: 180px;
+    height: 64px;
+    left: 630px;
+    top: 463px;
+    color: #FFFFFF ;
+ }
+ .header-img-fluid{
+    position: absolute;
+    border-radius: 8px;
+    width: 1200px;
+    height: 700px;
+    left: 140px;
+    top: 577px;
+    background-image: url(./images/banner.png);
+ }
+/* -----------------
+      Header part end
+ ----------------     */
+
+ .container{
+    margin: 20px;
+    padding: 20px;
+ }
+
+ .features{
+    display: flex;
+    padding-left: 8px;
+    
+ }
+ .gallery{
+    display: grid;
+    gap: 2vh;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 20px;
+ }
+ .team-img img{
+    width: 320px;
+    height: 300px;
+ }
+ .article{
+    position: absolute;
+    width: 537px;
+    height: 310px;
+    left: 760px;
+    top: 1600px;
+    padding-top: 30px;
+   
+ }
+
+ .article h1{
+    color: #131313;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+ }
+ .gray{
+    color: #727272;
+ }
+ .orange{
+    color: #FF900E;
+ }
+
+ .article p{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+ }
+
+ .article button{
+    border-radius: 8px;
+    background-color:  #FF900E;
+    border: none;
+    color: #FFFFFF;
+    position: absolute;
+    width: 180px;
+    height: 64px;
+   margin-top: 5px;
+ }
+
+ /* -------------- 
+    Features part start
+    ---------------    */
