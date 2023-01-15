@@ -6,7 +6,7 @@
    Header part start
 ---------------- */
 .header-area{
-    width: 1440px;
+    width: 1400px;
     height: 1320px;
     left: 0px;
     top: 0px;
@@ -231,3 +231,24 @@
     .icon-model img{
         padding-left: 15px;
     }
+
+    /* sponcer section added style */
+    .sponcer{
+       text-align: center;
+    }
+    .sponcer-company{
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer{
+        height: 100px;
+        width: 1400px;
+        margin-top: 10px;
+        background: rgba(255, 144, 14, 0.1);
+    }
+    .footer{
+        text-align: center;
+        justify-items: center;
+    }
+   
