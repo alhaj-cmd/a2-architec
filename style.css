@@ -5,7 +5,7 @@
   }
   
   body {
-    padding: 0 25px;
+    padding: 0 auto;
     width: 100%;
     max-width: 1250px;
     margin: 0 auto;
@@ -15,7 +15,7 @@
 ---------------- */
 .header-area{
     width: 1220px;
-    height: 1280px;
+    height: 1220px;
     left: 0px;
     top: 0px;
     background: rgba(255, 144, 14, 0.1);
@@ -67,7 +67,7 @@
     width: 700px;
     height: 225px;
     left: 350px;
-    top: 220px;
+    top: 200px;
     color: #131313;
   }
 
@@ -95,18 +95,18 @@
     width: 180px;
     height: 64px;
     left: 600px;
-    top: 463px;
+    top: 440px;
     color: #FFFFFF ;
  }
 
- .header-img-fluid{
+ .header-img-fluid img{
     position: absolute;
     border-radius: 8px;
-    width: 1130px;
-    height: 700px;
-    left: 90px;
-    top: 550px;
-    background-image: url(./images/banner.png);
+    width: 1150px;
+    height: 670px;
+    left: 40px;
+    top: 540px;
+   
  }
 /* -----------------
       Header part end
@@ -138,8 +138,8 @@
  .article{
     position: absolute;
     width: 500px;
-    left: 760px;
-    top: 1450px;
+    left: 750px;
+    top: 1400px;
     padding-top: 30px;
    
  }
@@ -166,6 +166,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+    margin-right: 20px;
+    padding-right: 20px;
  }
 
  .article button{
@@ -241,7 +243,9 @@
         text-align: center;
         color: #FFFFFF;
     }
-/* ---------------- cart style ----------
+/* ---------------- 
+        cart style 
+----------
    ---------------------- -         */
     #cart{
     color: #FFFFFF;
@@ -264,7 +268,11 @@
        padding: 10px;
        text-align: center;
     }
-    /* ---------- hover part design -------------- */
+    /* ----------
+
+     hover part design
+
+      -------------- */
     .cart-box:hover{
         transform: translate(42px, 18px);
         background-color: #FF900E;
@@ -299,10 +307,18 @@
         justify-content:space-between;
         margin-right: 30px;
     }
+
     .img-reset{
         height: 510px;
         width: 510px;
     }
+    
+    /* ------------
+
+        Input from design 
+
+        ------------------ */
+
     form{
         box-shadow: #FFFFFF;
         width: 500px;
@@ -316,15 +332,134 @@
         width: auto;
         border-bottom: 2px solid #FF900E;
       }
+
       /* --------------- Footer  -------------- */
+
     footer{
         height: 100px;
         margin-top: 10px;
         background: rgba(255, 144, 14, 0.1);
     }
+
     .footer{
         margin-top: 20px;
         text-align: center;
        
     }
-   
+
+/* ------------------
+
+
+   Responsive layout 
+
+
+   ------------------ */
+
+   @media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+
+   .header-area{
+    display: flex;
+    width: 100%;
+    background-color: rgb(236, 22, 190);
+     
+    }
+
+    .navbar{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .header-area button{
+        position: relative;
+        left: 0;
+        text-align: center;
+        margin-left: -260px;
+    }
+
+    .header-img-fluid img{
+        width: 100%;
+        left: 0;
+    }
+
+    .header-title{
+        width: 100%;
+        left: 0;
+        top: 150px;
+      
+    }
+
+    .features{
+       display: flow-root;
+    }
+
+    .gallery{
+        display: flow-root;
+    }
+
+    .feature{
+        height: 1600px;
+    }
+
+    .article{
+        left: 0;
+        width: 598px;
+        margin-bottom: 10px;
+        top: 2520px;
+        text-align: center;
+        margin: 7px;
+        padding: 5px;
+
+    }
+
+    .card-body{
+        max-width: 600px
+    }
+
+    .img-fluid img{
+        width: 92%;
+        padding-top: 10px;
+        margin: 10px;
+    }
+
+    .cart{
+        display: flow-root;
+    }
+
+    .cart-box{
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .features-card-btn{
+        margin-top: 10px;
+        margin-left: 0px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .sponcer-company{
+        display: inline;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        
+    }
+
+    .architect-area{
+        display: flow-root;
+        margin-bottom: 20px;
+
+    }
+
+    .architect-area img{
+        width: 100%;
+        height: 300px;
+    }
+
+  }
+
+  /* ------------
+            happy end comding
+            
+            ------ */
