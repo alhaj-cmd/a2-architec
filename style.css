@@ -1,17 +1,26 @@
-*{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+  }
+  
+  body {
+    padding: 0 25px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
 /* -------------
    Header part start
 ---------------- */
 .header-area{
-    width: 1400px;
-    height: 1320px;
+    width: 1220px;
+    height: 1280px;
     left: 0px;
     top: 0px;
     background: rgba(255, 144, 14, 0.1);
 }
+
 .navbar {
     padding: 0 25px;
     width: 100%;
@@ -43,7 +52,7 @@
     display: flex;
     list-style: none;
     gap: 25px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
 
   }
@@ -61,12 +70,14 @@
     top: 220px;
     color: #131313;
   }
+
   .header-title h1{
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
     text-align: center;
   }
+
   .header-title p{
     text-align: center;
     font-weight: 400;
@@ -75,6 +86,7 @@
     color: #727272;
 
   }
+
  .header-area button{
     position: absolute;
     border-radius: 8px;
@@ -82,17 +94,18 @@
     border: none;
     width: 180px;
     height: 64px;
-    left: 630px;
+    left: 600px;
     top: 463px;
     color: #FFFFFF ;
  }
+
  .header-img-fluid{
     position: absolute;
     border-radius: 8px;
-    width: 1200px;
+    width: 1130px;
     height: 700px;
-    left: 140px;
-    top: 577px;
+    left: 90px;
+    top: 550px;
     background-image: url(./images/banner.png);
  }
 /* -----------------
@@ -109,21 +122,24 @@
     padding-left: 8px;
     
  }
+
  .gallery{
     display: grid;
     gap: 2vh;
     grid-template-columns: repeat(2, 1fr);
     padding-left: 20px;
  }
+
  .team-img img{
-    width: 320px;
+    width: 300px;
     height: 300px;
  }
+
  .article{
     position: absolute;
-    width: 537px;
+    width: 500px;
     left: 760px;
-    top: 1480px;
+    top: 1450px;
     padding-top: 30px;
    
  }
@@ -136,9 +152,11 @@
     font-size: 45px;
     line-height: 53px;
  }
+
  .gray{
     color: #727272;
  }
+
  .orange{
     color: #FF900E;
  }
@@ -167,7 +185,10 @@
 
     .card-body{
         width: 1200px;
+        margin-bottom: 20px;
+       
     }
+
     .card-title h1{
         border-left: 2px solid #FF900E;
         padding-left: 10px;
@@ -175,6 +196,7 @@
         font-size: 45px;
         line-height: 53px;
     }
+
     .card-title p{
         margin-top: 30px;
     }
@@ -196,40 +218,65 @@
         box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
         border-radius: 8px;
     }
+
     .card-text{
         padding: 20px;
     }
-    .features-card-btn button{
-        position:relative;
+
+    .features-card-btn{
+        font-family: 'Work Sans';
+        font-style: normal;
+        position: absolute;
         width: 258px;
         height: 109px;
-        color: #FFFFFF;
         border: none;
         border-radius: 8px;
-        left: 40%;
-        padding-bottom: -20px;
+        margin-left: 430px;
+        margin-top: -50px;
         background-color: #FF900E;
+    }
+
+    .features-card-btn span{
+        background-size: 0;
+        text-align: center;
+        color: #FFFFFF;
+    }
+/* ---------------- cart style ----------
+   ---------------------- -         */
+    #cart{
+    color: #FFFFFF;
     }
 
     .cart{
         display: flex;
         margin: 20px;
-        width: 1200px;
         justify-content: space-between;
     }
+
     .cart-box{
-        position: absulate;
         border: 1px solid #FF900E;
-        border-radius: 8px;
-       
+        border-radius: 8px;   
         
     }
+
     .icon-model{
        margin: 20px;
        padding: 10px;
+       text-align: center;
     }
-    .icon-model img{
-        padding-left: 15px;
+    /* ---------- hover part design -------------- */
+    .cart-box:hover{
+        transform: translate(42px, 18px);
+        background-color: #FF900E;
+    }
+
+    .img-fluid{
+        hanging-punctuation: 200px;
+    }
+
+    .some-fact{
+        margin-top: 40px;
+        padding-top: 20px;
     }
 
     /* sponcer section added style */
@@ -237,18 +284,47 @@
        text-align: center;
     }
     .sponcer-company{
-        width: 1200px;
         display: flex;
         justify-content: space-between;
     }
+    .sponcer-logo img{
+        filter: grayscale(100%);
+
+
+    }
+
+    /* The Reservision */
+    .architect-area{
+        display: flex;
+        justify-content:space-between;
+        margin-right: 30px;
+    }
+    .img-reset{
+        height: 510px;
+        width: 510px;
+    }
+    form{
+        box-shadow: #FFFFFF;
+        width: 500px;
+        padding-left: 10px;
+    }
+    textarea{
+        border: none;
+    }
+    input[type=text] {
+        border: none;
+        width: auto;
+        border-bottom: 2px solid #FF900E;
+      }
+      /* --------------- Footer  -------------- */
     footer{
         height: 100px;
-        width: 1400px;
         margin-top: 10px;
         background: rgba(255, 144, 14, 0.1);
     }
     .footer{
+        margin-top: 20px;
         text-align: center;
-        justify-items: center;
+       
     }
    
